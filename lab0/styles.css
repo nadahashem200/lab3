@@ -1,0 +1,228 @@
+/*
+Author: Nada Hashem
+File Name: styles.css for Lab 0
+Date: 08/31/2025
+*/
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One);
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Your CSS goes here  */
+
+html, body {
+    height: 100%;      
+}
+
+main {
+    flex: 1;  
+}
+
+
+body{
+    font-family:lato, sans-serif;
+    background-color:  rgb(37, 50, 37);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/********************** header styling starts here ***********************/
+
+header{
+    background-image: url("images/grass.jpg");
+    padding-bottom:70px;
+}
+
+#header-text{
+    background: rgb(37 50 37 / 84%);
+    text-align: center;
+    padding: 1em;
+}
+
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    color:#FFF4EB;
+    font-weight: normal;
+    font-size:large;
+}
+
+#nav ul{
+    display:flex;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
+  
+#nav li{
+    padding: 0 1em;
+    background-color: rgba(71, 85, 71, 0.84); 
+}
+
+
+#nav a{
+    display: inline-block;
+    color:white;
+}
+
+
+#nav li:first-child a {
+    text-decoration: none;
+    border-top: 2px solid rgba(168, 208, 168, 0.84); 
+    color: rgba(168, 208, 168, 0.84); 
+}
+
+/******************** header styling ends here *************************************/
+
+
+/********************** main styling starts here ***********************/
+
+main{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em 1em 3em;
+}
+
+#circle-image-container{
+    margin-top: -80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#circle-image{
+    border-radius: 50%;
+    border: solid 2.5px rgba(222, 222, 20, 0.843);
+    width:200px;
+}
+
+article h3{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#main-text{
+    color: rgb(43, 71, 43);  
+    margin-top: -15px;
+    margin-bottom: 40px;
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+section{
+    background-color: rgb(207, 228, 221);
+    padding: 1em;
+    border-radius: 15px 0 15px 50px;
+    box-shadow: 5px 5px 2px #6d6b6b85;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 6px;
+    border-bottom: solid 1px rgb(184 184 184 / 49%);
+}
+ 
+section ul{
+margin-top: -17px;
+}
+
+
+.li-text{
+    color: rgb(43, 71, 43); 
+    margin-top: 2px;
+}
+
+/******************** main styling ends here *************************************/
+
+
+
+/******************** footer styling starts here *************************************/
+
+
+footer{
+    color: rgba(222, 222, 20, 0.843);
+    text-align: center;
+}
+#contact{
+    font-size: 1.4em;
+}
+
+#phone-number{
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#social-media{
+    display:flex;
+   justify-content: center;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    max-width: 150px;
+    justify-content: space-between;
+}
+
+.social-media-icons img{
+    width: 30px;
+}
+
+#copyright{
+    font-size: .9em;
+    background-color:  rgb(18, 21, 18);
+    padding: 25px 50px;
+    margin: 0;
+}
+
+/******************** footer styling ends here *************************************/
+
+
+
+
+
+@media only screen and (min-width : 700px) {
+
+    main{
+        padding: 2em 4em 3em;
+    }
+
+h1{
+    font-size: 3em;
+}
+
+#nav li{
+    padding: 0 2em;
+    margin-top: 10px;
+    background-color: transparent;
+}
+#circle-image{
+    width:300px;
+}
+   
+        
+ .li-text{
+            display: inline;
+        }
+       
+        }
+
+    
+@media only screen and (min-width : 1024px) {
+
+    main{
+            padding: 2em 10em 3em;
+    }
+
+            }
+
