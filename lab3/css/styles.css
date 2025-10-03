@@ -1,0 +1,87 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    position: relative;
+}
+main{
+  padding: 20px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #553C33;
+  font-family: 'Knewave', cursive;
+}
+
+.coordinates{
+  font-size: 36px;
+  padding: 30px;
+  text-align: center;
+  color:#996C5C;
+  font-family: 'Knewave', cursive;
+}
+
+
+.square{
+  border-radius: 10%;
+  background-color:#996C5C;
+  position: absolute;
+  width: 80px;   
+  height: 80px;
+  transition: all 0.5s ease; 
+  }
+
+  .square.animate {
+    animation: moveandrotate 3s ease-in-out 3;
+  }
+  
+ 
+  @keyframes moveandrotate {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(300px, 50px) rotate(90deg); }
+    50%  { transform: translate(250px, 300px) rotate(180deg); }
+    75%  { transform: translate(50px, 250px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+  }
+  
+  
+.message{
+  color: #553C33;
+  font-size: 30px;
+  text-align: center;
+  transition: all 1s ease; 
+  opacity: 0;
+  transform: scale(0.8); 
+}
+
+.message.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.clickme {
+  display: block;
+  margin: 70px auto;
+  background-color:#E6A28A;
+  color: #161513;
+  padding: 20px;
+  font-size: 36px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+  
